@@ -11,9 +11,12 @@
 
 <body class="d-flex align-items-center py-4 bg-body-tertiary">
     <main class="container form-signin">
-        <h3>Selamat Datang di Apliaksi Perpustakaan Ecek-ecek</h3>
-        <form action="proses-login.php" method="post">
-            <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+        <h3>Form Registerasi</h3>
+        <form action="proses-registerasi.php" method="post">
+             <div class="form-floating">
+                <input type="text" name="nama" class="form-control" id="floatingInput" placeholder="nama kamu">
+                <label for="floatingInput">Nama Member</label>
+            </div>
             <div class="form-floating">
                 <input type="email" name="email" class="form-control" id="floatingInput" placeholder="name@example.com">
                 <label for="floatingInput">Email address</label>
@@ -22,6 +25,8 @@
                 <input type="password" name="password" class="form-control" id="floatingPassword" placeholder="Password">
                 <label for="floatingPassword">Password</label>
             </div>
+            <input type="text" value="0" name="type_user">
+            <input type="date" value="<?=date('Y-m-d');?>" name="join_date">
             <button class="btn btn-primary w-100 py-2" type="submit">Sign in</button>
             <p>Belum Punya Akun klik <a href="registerasi.php">Registerasi</a></p>
             <p class="mt-5 mb-3 text-body-secondary">&copy; Aplikasi Perpustakaan</p>
